@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La.Grace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.html">
+    <link rel="stylesheet" href="./register.html">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">HOME</li>
+                        <li class="header__navbar-item">COLLECTION</li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">ABOUT US</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--kick-ct">CONTACT
+                            <div class="header__contact">
+                                <header class="header__contact-header">
+                                    <p style="color: black"><a href="" class="header__navbar-icon-link"></a> <i class="fa-solid fa-house"></i>  65 Nguyen Hy Quang</p>
+                                    <p style="color: black"><a href="" class="header__navbar-icon-link"></a> <i class="fa-solid fa-phone"></i>  039 3406690</p>
+                                    <p style="color: black"><a href="" class="header__navbar-icon-link"></a> <i class="fa-solid fa-phone"></i>  082 9401083</p>
+                                </header>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold header__navbar-item--separate js-form"><a href="register.html" style="text-decoration: none;">REGISTER</a></li>
+                        <li class="header__navbar-item header__navbar-item--bold js-form"><a href="login.html" style="text-decoration: none;">LOGIN</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <img src="./assets/img/logooo.ai">
+                    </div>
+
+                    <div class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Search">
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Shop all</span>
+                            <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
+                            <!-- <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span></span>
+                                </li>
+                            </ul> -->
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="header__cart">
+                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid__row">
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Shopping with La.Grace</h3>
+                        <img src="./assets/img/logooo.ai"  class="footer__logo">
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Ha Noi (9h-21h)</h3>
+                        
+                            <p class="footer-item"> 
+                                <i class="fa-solid fa-location-dot"></i>
+                                65 Nguyen Hy Quang, Dong Da
+                            </p>
+                            <p class="footer-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                368 Bach Mai, Hai Ba Trung
+                            </p>
+                        
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Follow us</h3>
+                        
+                        <a href="" class="footer-item__link">
+                            <i class="footer-item__link-icon fa-brands fa-facebook"></i>
+                            <i class="footer-item__link-icon fa-brands fa-instagram"></i>
+                            <i class="footer-item__link-icon fa-brands fa-tiktok"></i>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal layout -->
+    <!-- <div class="modal js-modal">
+        <div class="modal__overlay modal-close"> -->
+            <!-- <i class="js-modal-close fa-solid fa-xmark"></i> -->
+        <!-- </div>
+        <div class="modal__body"> -->
+            
+            <!-- RESGITER FORM -->
+            <!-- <div class="auth-form">
+
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">REGISTER</h3>
+                        <span class="auth-form__swich-btn-login">LOGIN</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" class="auth-form__input" placeholder="Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Username">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="password">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Confirm password">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">BACK</button>
+                        <button class="btn btn--primany btn--disabled">Register</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__social">
+                    <a href="" class="auth-form__social--fb btn btn--size-s btn--with-icon">
+                        <i class="auth-form__social-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__social-title">
+                            Log in with Facebook
+                        </span>
+                    </a>   
+                    <a href="" class="auth-form__social--gg btn btn--size-s btn--with-icon">
+                        <i class="auth-form__social-icon fa-brands fa-google"></i>
+                        <span class="auth-form__social-title">
+                            Log in with Google
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+             -->
+            <!-- LOGIN FORM -->
+            <!-- <div class="auth-form">
+
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">LOGIN</h3>
+                        <span class="auth-form__swich-btn-register">REGISTER</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Emai or username">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__forgot">
+                            <a href="" class="auth-form__forgot-link">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--primany btn--disabled">Log in</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__social">
+                    <a href="" class="auth-form__social--fb btn btn--size-s btn--with-icon">
+                        <i class="auth-form__social-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__social-title">
+                            Log in with Facebook
+                        </span>
+                    </a>   
+                    <a href="" class="auth-form__social--gg btn btn--size-s btn--with-icon">
+                        <i class="auth-form__social-icon fa-brands fa-google"></i>
+                        <span class="auth-form__social-title">
+                            Log in with Google
+                        </span>
+                    </a>
+
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script>
+       src="form.js"
+    </script>
+</body>
+</html>
